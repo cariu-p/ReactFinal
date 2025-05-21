@@ -5,7 +5,7 @@ import Exoplanets from './Component/Exoplanetas'
 import BarraNave from './Component/MainLayout'
 
 function App() {
-  
+
 
   return (
     <>
@@ -43,21 +43,138 @@ function App() {
         <section className='grid md:grid-cols-3 justify-items-center m-11'>
           <Card />
         </section>
-          
-        <Exoplanets/>  
-        <section className="bg-gradient-to-r  to-blue-950 py-20">
+
+        <Exoplanets />
+
+
+        {/* Sección de Suscripción */}
+        <section className="bg-gradient-to-r to-blue-950 py-20">
           <div className="container">
-            <div className="max-w-2xl mx-auto ">
+            <div className="max-w-2xl mx-auto">
               <h2 className="text-3xl font-bold mb-4 text-white">Mantente Informado</h2>
               <p className="text-slate-300 mb-6">
                 Suscríbete a nuestro boletín para recibir las últimas noticias y descubrimientos espaciales
               </p>
-              <div className="flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
-               
+              <div className="flex flex-col sm:flex-row gap-2 max-w-xl">
+                <input
+                  type="email"
+                  placeholder="Ingresa tu correo electrónico"
+                  className="flex-1 px-5 py-3 rounded-md bg-slate-800 border border-slate-600 text-white placeholder-slate-400 focus:outline-none focus:ring-2
+                   focus:ring-purple-950 transition-all duration-200"
+                />
+                <button className="bg-purple-900 hover:bg-purple-600 text-white px-6 py-3 rounded-md 
+                transition-colors duration-200">
+                  Suscribirse
+                </button>
               </div>
             </div>
           </div>
         </section>
+
+        {/* Sección con información adicional */}
+        <section className="bg-slate-950 border-t border-slate-800 py-12">
+          <div className="container">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+              {/* Sección CosmoData */}
+              <div>
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="text-purple-500 text-xl">⭐</span>
+                  <span className="text-xl font-bold text-white">CosmoData</span>
+                </div>
+                <p className="text-slate-400 text-sm">
+                  Explorando el universo a través de datos y visualizaciones interactivas.
+                </p>
+              </div>
+
+              {/* Sección "Explorar" */}
+              <div>
+                <h3 className="font-medium mb-4 text-white">Explorar</h3>
+                <ul className="space-y-2 text-sm text-slate-400">
+                  <li>
+                    <a href="#" className="transition-colors duration-200 hover:text-purple-400">
+                      Planetas
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="transition-colors duration-200 hover:text-purple-400">
+                      Estrellas
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="transition-colors duration-200 hover:text-purple-400">
+                      Galaxias
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="transition-colors duration-200 hover:text-purple-400">
+                      Misiones Espaciales
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Sección "Recursos" */}
+              <div>
+                <h3 className="font-medium mb-4 text-white">Recursos</h3>
+                <ul className="space-y-2 text-sm text-slate-400">
+                  <li>
+                    <a href="#" className="transition-colors duration-200 hover:text-purple-400">
+                      API de Datos
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="transition-colors duration-200 hover:text-purple-400">
+                      Descargar Datos
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="transition-colors duration-200 hover:text-purple-400">
+                      Documentación
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="transition-colors duration-200 hover:text-purple-400">
+                      Contribuir
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Sección "Contacto" */}
+              <div>
+                <h3 className="font-medium mb-4 text-white">Contacto</h3>
+                <ul className="space-y-2 text-sm text-slate-400">
+                  <li>
+                    <a href="#" className="transition-colors duration-200 hover:text-purple-400">
+                      Acerca de Nosotros
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="transition-colors duration-200 hover:text-purple-400">
+                      Equipo
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="transition-colors duration-200 hover:text-purple-400">
+                      Contacto
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="transition-colors duration-200 hover:text-purple-400">
+                      Política de Privacidad
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Derechos reservados */}
+            <div className="border-t border-slate-800 mt-8 pt-8 text-sm text-slate-500 text-center">
+              <p>© {new Date().getFullYear()} CosmoData. Todos los derechos reservados.</p>
+            </div>
+          </div>
+        </section>
+
       </body>
 
     </>

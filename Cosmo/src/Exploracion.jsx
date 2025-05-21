@@ -84,6 +84,7 @@ function Exploracion() {
                     </section>
                 </section>
             </section>
+            <br/><br/>
                 
 
         </body>

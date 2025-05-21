@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { NavLink } from 'react-router'
 
 export default function ExoplanetComparison() {
   const [exoplanets] = useState([...Array(8)].map((_, i) => ({
@@ -48,9 +49,11 @@ export default function ExoplanetComparison() {
       
       {/* Footer */}
       <div className="px-6 pb-6">
-        <button className="w-full bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-md font-medium transition-colors">
-          Explorar datos de exoplanetas
-        </button>
+       
+         <NavLink to="/Planets" className="w-full bg-purple-900 hover:bg-purple-800 text-white py-2 px-4 rounded-md font-medium transition-colors" end> 
+         Explorar datos de exoplanetas </NavLink>
+
+        
       </div>
     </div>
   );
